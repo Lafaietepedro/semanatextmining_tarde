@@ -8,7 +8,7 @@
 <body>
     <h1>Texto para Fala</h1>
 
-    <form method="POST">
+    <form method="POST" action='/'>
         <textarea name="texto" id="texto" rows="4" cols="50" placeholder="Digite o texto aqui"></textarea>
         <br>
         <button type="submit">Gerar Áudio</button>
@@ -18,7 +18,7 @@
     {% if audio_path %}
         <h2>Seu áudio:</h2>
         <audio controls>
-            <source src="{{ audio_path }}" type="audio/mp3">
+            <source src="{{ audio_path }}" type="audio/mpeg">
             Seu navegador não suporta o elemento de áudio.
         </audio>
     {% endif %}
