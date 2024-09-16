@@ -4,14 +4,12 @@ import os
 
 app = Flask(__name__)
 
-os.makedirs('static', exist_ok=True)
-
 @app.route('/',methods=['GET','POST'])
 def index():
     audio_path = None
     if request.method == 'POST':
         texto = request.form['texto']
-        lingua = 'pt'
+        lingua = 'pt-br'
 
         tts = gTTS(text=texto, lang=lingua, tld='com.br')
 
