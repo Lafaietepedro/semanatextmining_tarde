@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk';
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    color: aliceblue;
+    background-color: #3b393996;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body, .form_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home {
+    width: 70vw;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 50px;
+    background-color: #3b3939;
+    opacity: .95;
+}
+
+.home h1, input {
+    text-align: center;
+    font-size: 50px;
+    margin: 20px 0;
+    opacity: 1;
+}
+
+.form_div form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_div input {
+    width: 20vw;
+    height: 5vh;
+    border-radius: 10px;
+    font-size: 20px;
+}
